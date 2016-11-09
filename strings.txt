@@ -1,0 +1,41 @@
+C++ String
+
+read one line
+
+getline()
+
+string a;
+getline(cin, a);
+cout << a << endl;
+Input
+
+Hello World!!!
+Output
+
+Hello World!!!
+Convert to char array
+
+string cppstr = "this is a string";
+char target[1024];
+strcpy(target, cppstr.c_str());
+1.2.2 C String (Character Array)
+
+Input C String
+
+gets()
+
+Reads characters from the standard input (stdin) and stores them as a C string into str until a newline character or the end-of-file is reached.
+char s[12];
+gets(s);
+cout << "\"" << s << "\"" << ", length: " << strlen(s) << endl;
+Input
+
+hello world
+new line
+Output
+
+"hello world", length: 11
+Convert to C++ string
+
+char arrstr[] = "this is a string";
+string target = string(arr);
